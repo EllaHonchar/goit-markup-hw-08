@@ -2,8 +2,8 @@
     border-bottom: 1px solid var(--line-border-color);
 
     @media screen and (max-width: 767px) {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     &-container {
         display: flex;
@@ -108,7 +108,6 @@
     margin-right: 87px;
 
     @include fonts(24px, 700, 1.17, 00.03em);
-    @include section-indent(24px, 24px);
 
     @media (min-width: 1200px) {
         @include fonts(26px, 700, 1.17, 00.03em);
@@ -138,9 +137,21 @@
     }
 }
 
-.icon {
+.icon-mail-logo {
     margin-right: 10px;
     fill: currentColor;
+    @media (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.icon-tel-logo {
+    margin-right: 10px;
+    fill: currentColor;
+    @media (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
 }
 
 .mob-menu {

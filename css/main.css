@@ -381,8 +381,8 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 .header-container {
@@ -495,8 +495,6 @@ ul {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 @media (min-width: 1200px) {
   .header-logo {
@@ -530,9 +528,26 @@ ul {
   border: 1 solid #000000;
 }
 
-.icon {
+.icon-mail-logo {
   margin-right: 10px;
   fill: currentColor;
+}
+@media (min-width: 1200px) {
+  .icon-mail-logo {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-tel-logo {
+  margin-right: 10px;
+  fill: currentColor;
+}
+@media (min-width: 1200px) {
+  .icon-tel-logo {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .mob-menu {
@@ -1236,9 +1251,9 @@ ul {
 
 .element-card {
   display: block;
-  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc((100% - 0px) / 1);
 }
 .element-card:nth-child(3n) {
   margin-right: 0;
@@ -1248,6 +1263,16 @@ ul {
 }
 .element-card:focus .wrap-text {
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .element-card {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .element-card {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .element-link {
