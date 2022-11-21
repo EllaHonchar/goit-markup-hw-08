@@ -437,6 +437,7 @@ ul {
   display: flex;
   margin-left: auto;
   gap: 30px;
+  padding-right: 15px;
 }
 @media screen and (max-width: 767px) {
   .contact-nav {
@@ -456,7 +457,7 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-nav-list {
-    margin-left: 93px;
+    margin-left: 96px;
   }
 }
 
@@ -490,12 +491,20 @@ ul {
   color: var(--title-text-color);
   font-family: "Raleway", sans-serif;
   margin-right: 87px;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo {

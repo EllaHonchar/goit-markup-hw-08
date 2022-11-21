@@ -54,7 +54,8 @@
 .contact-nav {
     display: flex;
     margin-left: auto;
-gap: 30px;
+    gap: 30px;
+    padding-right: 15px;
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -63,14 +64,13 @@ gap: 30px;
         align-content: center;
         gap: 10px;
     }
-
 }
 
 .contact-nav-list {
     margin: 0;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: 93px;
+        margin-left: 96px;
     }
 }
 .contact-nav-link {
@@ -105,9 +105,12 @@ gap: 30px;
     font-family: 'Raleway', sans-serif;
     margin-right: 87px;
 
-    @include fonts(26px, 700, 1.19, 00.03em);
-
+    @include fonts(24px, 700, 1.17, 00.03em);
     @include section-indent(24px, 24px);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include fonts(26px, 700, 1.17, 00.03em);
+    }
 }
 
 .logo {
