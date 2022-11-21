@@ -436,6 +436,7 @@ ul {
 .contact-nav {
   display: flex;
   margin-left: auto;
+  gap: 30px;
 }
 @media screen and (max-width: 767px) {
   .contact-nav {
@@ -446,6 +447,7 @@ ul {
   .contact-nav {
     flex-direction: column;
     align-content: center;
+    gap: 10px;
   }
 }
 
